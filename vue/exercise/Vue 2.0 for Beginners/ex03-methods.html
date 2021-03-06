@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+    <div id="app">
+        <div>
+            city：
+            <input v-model="city" />
+            <div>{{ city }}</div>
+        </div>
+        <button @click="increase"> + </button>
+        <button @click="decrease"> - </button>
+        <h2>Votes: {{ votes }}</h2>
+    </div>
+</body>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            votes: 0,
+            city: null
+        },
+        methods: {
+            increase: function() {
+                console.log('increase');
+                if(this.city == 'taipei') {
+                    this.votes = this.votes + 2;
+                } else {
+                    this.votes++;
+                }
+            },
+            decrease: function() {
+                console.log('decrease');
+                if (this.city == 'taipei') {
+                    this.votes = this.votes - 2;
+                } else {
+                    this.votes--;
+                }
+            }
+        }
+    })
+</script>
+</html>
