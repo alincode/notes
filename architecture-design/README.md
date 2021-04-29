@@ -9,3 +9,4 @@
 - [System Design Cheatsheet](https://gist.github.com/vasanthk/485d1c25737e8e72759f?fbclid=IwAR3sWUl8ybzwnyk0911X21DucQDq1kCPcu18U6NtO65f92RIDZlSyJxEnao)
 - <https://github.com/jguamie/system-design>
 - <https://code.likeagirl.io/how-to-prepare-for-your-next-system-design-interview-f877e5a3d52f>
+- <https://github.com/sharanyaa/grok_sdi_educative>
